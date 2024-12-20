@@ -1,0 +1,22 @@
+type Query{
+    getComputerByProce(proce:String):[Computer]
+
+}
+
+type Mutation{
+    saveComputer(computerDto:ComputerInput):Computer
+}
+
+
+type Computer{
+    proce:String
+    ram:String
+    hardDrive:String
+    price:Float
+}
+input ComputerInput{
+    proce:String
+    ram:String
+    hardDrive:String
+    price:Float
+}
